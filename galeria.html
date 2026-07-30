@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Exclusiva | Casa Aura Catacamas</title>
+    <meta name="description" content="Recorre virtualmente las instalaciones de Casa Aura en Catacamas. Fotos reales de la cocina, las habitaciones de lujo, el área social y exteriores.">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Galería Exclusiva | Casa Aura Catacamas">
+    <meta property="og:description" content="Visualiza tu estadía. Fotografías de alta resolución de las habitaciones, cocina y zonas comunes.">
+    <meta property="og:image" content="assets/gallery_exterior.jpg">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="assets/logo.svg" alt="Casa Aura Logo" class="logo">
+                <span class="logo-text">Casa Aura</span>
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="experiencia.html">La Experiencia</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="galeria.html" class="active">Galería</a>
+                <a href="tarifas.html">Tarifas</a>
+                <a href="reglas.html">Reglas</a>
+                <a href="guia-local.html">Guía Local</a>
+                <a href="contacto.html" class="btn-nav">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner" style="background-image: linear-gradient(rgba(13, 77, 79, 0.8), rgba(13, 77, 79, 0.8)), url('assets/gallery_exterior.jpg'); height: 40vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
+        <div class="banner-content">
+            <span class="section-tagline" style="color: var(--accent-color);">Galería de Fotos</span>
+            <h1 style="font-size: 3rem; letter-spacing: 5px; font-weight: 300; text-transform: uppercase;">Visualiza tu Estancia</h1>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section section-gallery-page">
+        <div class="container">
+            <span class="section-tagline center">Cada Detalle Cuenta</span>
+            <h2 class="section-title">Fotografías del Alojamiento</h2>
+            
+            <div class="gallery" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 40px;">
+                <div class="gallery-item" style="position: relative; aspect-ratio: 16/10; overflow: hidden; border-radius: 8px; box-shadow: var(--shadow-sm);">
+                    <img src="assets/gallery_exterior.jpg" alt="Vista Exterior de Casa Aura" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    <div class="gallery-overlay">
+                        <span>Vista Exterior</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="position: relative; aspect-ratio: 16/10; overflow: hidden; border-radius: 8px; box-shadow: var(--shadow-sm);">
+                    <img src="assets/gallery_suite.jpg" alt="Suite Principal en Casa Aura" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    <div class="gallery-overlay">
+                        <span>Suite Principal</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="position: relative; aspect-ratio: 16/10; overflow: hidden; border-radius: 8px; box-shadow: var(--shadow-sm);">
+                    <img src="assets/gallery_social.jpg" alt="Área Social y Sala de Estar" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    <div class="gallery-overlay">
+                        <span>Área Social</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="position: relative; aspect-ratio: 16/10; overflow: hidden; border-radius: 8px; box-shadow: var(--shadow-sm);">
+                    <img src="assets/gallery_sunset.jpg" alt="Atardecer desde la Terraza" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    <div class="gallery-overlay">
+                        <span>Atardecer en Catacamas</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="position: relative; aspect-ratio: 16/10; overflow: hidden; border-radius: 8px; box-shadow: var(--shadow-sm);">
+                    <img src="assets/casa_aura_cocina.png" alt="Cocina Minimalista" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    <div class="gallery-overlay">
+                        <span>Cocina Equipada</span>
+                    </div>
+                </div>
+                <div class="gallery-item" style="position: relative; aspect-ratio: 16/10; overflow: hidden; border-radius: 8px; box-shadow: var(--shadow-sm);">
+                    <img src="assets/casa_aura_habitacion.png" alt="Habitación Secundaria" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    <div class="gallery-overlay">
+                        <span>Dormitorio Secundario</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Airbnb banner -->
+    <section class="section" style="background-color: var(--primary-ultra-light); text-align: center; padding: 60px 0;">
+        <div class="container">
+            <h2 style="color: var(--primary-color); font-weight: 300; letter-spacing: 2px; margin-bottom: 20px; font-size: 2rem;">¿QUIERES VER DISPONIBILIDAD?</h2>
+            <p style="color: var(--text-muted); margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">Accede directamente a nuestras tarifas, calendario y disponibilidad en línea para planificar tus fechas.</p>
+            <a href="tarifas.html" class="btn">Ver Tarifas y Reserva</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="assets/logo.svg" alt="Casa Aura Logo" class="footer-logo">
+                <h3>Casa Aura</h3>
+                <p>Estancia moderna y exclusiva en Catacamas, Olancho.</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Explora</h4>
+                    <a href="index.html">Inicio</a>
+                    <a href="experiencia.html">La Experiencia</a>
+                    <a href="servicios.html">Servicios</a>
+                    <a href="galeria.html">Galería</a>
+                    <a href="tarifas.html">Tarifas</a>
+                    <a href="reglas.html">Reglas de la Casa</a>
+                    <a href="guia-local.html">Guía Local</a>
+                </div>
+                <div>
+                    <h4>Síguenos</h4>
+                    <a href="https://www.instagram.com/casaaura1503?igsh=ZmV0ZGM2ZmhpMXc1&utm_source=qr" target="_blank" class="footer-social">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="margin-right: 6px; vertical-align: middle;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        Instagram
+                    </a>
+                </div>
+                <div>
+                    <h4>Información</h4>
+                    <a href="tarifas.html">Tarifas e Información</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="reglas.html">Políticas de la Casa</a>
+                    <a href="contacto.html">Términos de Cancelación</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Casa Aura. Todos los derechos reservados. Diseñado como web completa de alta gama.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

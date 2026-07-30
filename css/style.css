@@ -119,6 +119,15 @@ nav a:hover::after {
     width: 100%;
 }
 
+nav a.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+nav a.active::after {
+    width: 100%;
+}
+
 .btn-nav {
     background-color: var(--primary-color);
     color: white !important;
@@ -1063,7 +1072,262 @@ footer {
     }
 }
 
-/* Media Queries */
+/* Componentes Nuevos: Inventario, Reglas de la Casa y Guía Local */
+
+/* Mobile Menu Toggle button styling */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
+    transition: var(--transition);
+}
+
+.menu-toggle:hover {
+    color: var(--accent-color);
+}
+
+.menu-toggle svg {
+    display: block;
+}
+
+/* Sección de Inventario */
+.inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.inventory-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 30px 25px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.inventory-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-color);
+}
+
+.inventory-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.inventory-card-header h3 {
+    color: var(--primary-color);
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.inventory-icon {
+    color: var(--accent-color);
+    flex-shrink: 0;
+}
+
+.inventory-list {
+    list-style: none;
+}
+
+.inventory-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.inventory-list-icon {
+    color: var(--accent-color);
+    flex-shrink: 0;
+}
+
+/* Reglas de la Casa */
+.rules-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.rules-intro-card {
+    background-color: var(--primary-ultra-light);
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    height: 100%;
+}
+
+.rules-intro-card p {
+    margin-bottom: 25px;
+    color: var(--text-muted);
+}
+
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.rule-card {
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent-color);
+    border-top: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 22px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.rule-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateX(3px);
+}
+
+.rule-card h3 {
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rule-card p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* Guía Local */
+.guide-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 45px;
+}
+
+.tab-btn {
+    padding: 10px 24px;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.tab-btn.active, .tab-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.guide-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.guide-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-color);
+}
+
+.guide-card-body {
+    padding: 25px;
+}
+
+.guide-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--primary-ultra-light);
+    color: var(--primary-color);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.guide-card h3 {
+    color: var(--primary-color);
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.guide-card p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.guide-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries actualizadas */
 @media (max-width: 1024px) {
     .booking-layout, .details-grid, .contact-grid {
         grid-template-columns: 1fr;
@@ -1074,6 +1338,19 @@ footer {
         position: static;
         max-width: 500px;
         margin: 0 auto;
+    }
+
+    .inventory-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rules-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .guide-content {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1093,20 +1370,49 @@ footer {
     }
     
     .header-container {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
     }
     
+    .menu-toggle {
+        display: block;
+    }
+
     nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(249, 249, 247, 0.98);
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: var(--shadow-md);
+        padding: 25px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        z-index: 999;
+    }
+
+    nav.active {
+        display: flex;
     }
     
     nav a {
-        margin: 5px 10px;
+        margin: 8px 0;
+        width: 80%;
+        text-align: center;
+        padding: 10px 0;
     }
     
+    .btn-nav {
+        margin-left: 0;
+        width: 80%;
+        text-align: center;
+    }
+
     .specs-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
@@ -1125,4 +1431,17 @@ footer {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+
+    .inventory-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rules-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .guide-content {
+        grid-template-columns: 1fr;
+    }
 }
+

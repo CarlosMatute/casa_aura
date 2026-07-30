@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Aura | Luxury Beachfront Villa</title>
+    <title>Casa Aura | Hospedaje de Lujo en Catacamas, Olancho</title>
+    <meta name="description" content="Casa Aura: Alojamiento moderno y exclusivo en Residencial El Llano, Catacamas, Olancho. Disfruta de la mejor estadía con Wi-Fi Starlink, estacionamiento privado y seguridad 24/7.">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://casaaura.com/">
+    <meta property="og:title" content="Casa Aura | Hospedaje de Lujo en Catacamas, Olancho">
+    <meta property="og:description" content="Alojamiento moderno de diseño minimalista con comodidades de clase mundial en Catacamas, Olancho.">
+    <meta property="og:image" content="assets/hero_bg.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Casa Aura | Hospedaje de Lujo en Catacamas, Olancho">
+    <meta property="twitter:description" content="Alojamiento moderno de diseño minimalista con comodidades de clase mundial en Catacamas, Olancho.">
+    <meta property="twitter:image" content="assets/hero_bg.jpg">
+    
     <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,30 +28,36 @@
                 <img src="assets/logo.svg" alt="Casa Aura Logo" class="logo">
                 <span class="logo-text">Casa Aura</span>
             </div>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
             <nav>
-                <a href="#inicio">Inicio</a>
-                <a href="#detalles">La Experiencia</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#galeria">Galería</a>
-                <a href="#reserva">Tarifas</a>
-                <a href="#opiniones">Opiniones</a>
-                <a href="#contacto" class="btn-nav">Contacto</a>
+                <a href="index.html" class="active">Inicio</a>
+                <a href="experiencia.html">La Experiencia</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="galeria.html">Galería</a>
+                <a href="tarifas.html">Tarifas</a>
+                <a href="reglas.html">Reglas</a>
+                <a href="guia-local.html">Guía Local</a>
+                <a href="contacto.html" class="btn-nav">Contacto</a>
             </nav>
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section id="inicio" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Casa Aura</h1>
             <p>Donde la serenidad encuentra el lujo</p>
             <div class="hero-actions">
-                <a href="#reserva" class="btn">Tarifas y Disponibilidad</a>
-                <a href="#contacto" class="btn btn-secondary">Contacto Directo</a>
+                <a href="tarifas.html" class="btn">Tarifas y Disponibilidad</a>
+                <a href="contacto.html" class="btn btn-secondary">Contacto Directo</a>
             </div>
         </div>
     </section>
 
+    <!-- La Experiencia Teaser -->
     <section id="detalles" class="section section-details">
         <div class="container">
             <div class="details-grid">
@@ -45,10 +65,9 @@
                     <span class="section-tagline">La Experiencia</span>
                     <h2 class="section-title left">Un espacio diseñado para tu descanso</h2>
                     <p class="lead">Casa Aura es un alojamiento moderno donde el diseño minimalista, la comodidad y la tranquilidad se unen para hacerte sentir como en casa.</p>
-                    <p>Cada rincón ha sido cuidadosamente pensado para ofrecer una experiencia cálida y relajante, con espacios funcionales, iluminación acogedora y detalles que invitan a desconectarte del ritmo diario. Ya sea que viajes por trabajo, en pareja o con tu familia, aquí encontrarás el equilibrio perfecto entre confort, privacidad y estilo.</p>
-                    <p>Casa Aura es ese lugar donde el descanso se convierte en una experiencia.</p>
+                    <p>Cada rincón ha sido cuidadosamente pensado para ofrecer una experiencia cálida y relajante, con espacios funcionales, iluminación acogedora y detalles que invitan a desconectarte del ritmo diario. Ya sea que viajes por trabajo, en pareja o con tu familia, aquí encontrarás el equilibrio perfecto.</p>
                     
-                    <div class="specs-grid">
+                    <div class="specs-grid" style="margin-bottom: 30px;">
                         <div class="spec-item">
                             <svg class="spec-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                             <span class="spec-val">4</span>
@@ -70,6 +89,8 @@
                             <span class="spec-lbl">Área de Lavandería</span>
                         </div>
                     </div>
+
+                    <a href="experiencia.html" class="btn">Descubrir la Experiencia</a>
                 </div>
                 <div class="details-image-card">
                     <img src="assets/casa_aura_habitacion.png" alt="Habitación de Casa Aura" class="details-img">
@@ -79,17 +100,18 @@
         </div>
     </section>
 
+    <!-- Servicios Teaser -->
     <section id="servicios" class="section section-services">
         <div class="container">
             <span class="section-tagline center">Servicios Premium</span>
             <h2 class="section-title">Comodidades de Clase Mundial</h2>
-            <div class="amenities">
+            <div class="amenities" style="margin-bottom: 40px;">
                 <div class="amenity-card">
                     <div class="amenity-icon">
                         <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M5 12.55a11 11 0 0 1 14.08 0M8.5 16.3a7.5 7.5 0 0 1 7 0M11.24 19.86a3 3 0 0 1 1.52 0M12 22v.01"/></svg>
                     </div>
                     <h3>Wi-Fi de Alta Velocidad</h3>
-                    <p>Conexión satelital Starlink de hasta 300 Mbps para mantenerte conectado en el paraíso.</p>
+                    <p>Conexión satelital Starlink de hasta 300 Mbps para mantenerte conectado en Olancho.</p>
                 </div>
                 <div class="amenity-card">
                     <div class="amenity-icon">
@@ -106,14 +128,18 @@
                     <p>Estacionamiento seguro y techado para tu vehículo dentro de la propiedad, con acceso controlado.</p>
                 </div>
             </div>
+            <div style="text-align: center;">
+                <a href="servicios.html" class="btn btn-secondary" style="color: var(--primary-color); border-color: var(--primary-color);">Ver Todos los Servicios</a>
+            </div>
         </div>
     </section>
 
+    <!-- Galería Teaser -->
     <section id="galeria" class="section section-gallery">
         <div class="container">
             <span class="section-tagline center">Visualiza tu Estancia</span>
             <h2 class="section-title">Galería Exclusiva</h2>
-            <div class="gallery">
+            <div class="gallery" style="margin-bottom: 40px;">
                 <div class="gallery-item">
                     <img src="assets/gallery_exterior.jpg" alt="Vista Exterior de Casa Aura">
                     <div class="gallery-overlay">
@@ -139,48 +165,40 @@
                     </div>
                 </div>
             </div>
+            <div style="text-align: center;">
+                <a href="galeria.html" class="btn btn-secondary" style="color: var(--primary-color); border-color: var(--primary-color);">Ver Galería Completa</a>
+            </div>
         </div>
     </section>
 
+    <!-- Tarifas Teaser -->
     <section id="reserva" class="section section-booking">
         <div class="container">
             <div class="booking-layout">
                 <div class="booking-info">
                     <span class="section-tagline">Reserva tu estadía</span>
                     <h2 class="section-title left">Planifica tus Vacaciones</h2>
-                    <p>Reserva fácilmente a través de Airbnb o contáctanos directamente para coordinar tu estancia.</p>
+                    <p>Reserva fácilmente a través de Airbnb o contáctanos directamente para coordinar tu estancia en Catacamas.</p>
                     
-                    <div class="included-services">
+                    <div class="included-services" style="margin-bottom: 30px;">
                         <h3>¿Qué incluye tu reserva?</h3>
                         <ul>
                             <li>
                                 <svg class="list-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M20 6L9 17l-5-5"/></svg>
-                                Limpieza diaria y cambio de toallas.
+                                Limpieza periódica y cambio de toallas.
                             </li>
                             <li>
                                 <svg class="list-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M20 6L9 17l-5-5"/></svg>
-                                Treats de bienvenida.
+                                Treats de bienvenida y cortesías.
                             </li>
                             <li>
                                 <svg class="list-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M20 6L9 17l-5-5"/></svg>
-                                Agua embotellada de cortesía.
+                                Café olanchano de la zona local.
                             </li>
-                            <li>
-                                <svg class="list-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M20 6L9 17l-5-5"/></svg>
-                                Café de zona local.
-                            </li>
-                            <li>
-                                <svg class="list-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M20 6L9 17l-5-5"/></svg>
-                                Kit de emergencias.
-                            </li>
-                            <li class="li-more">y más...</li>
                         </ul>
                     </div>
 
-                    <a href="#" target="_blank" class="btn btn-airbnb">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="margin-right: 8px; vertical-align: middle;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm5.1 14.5c-.3.7-1.5 1.9-2.6 3.5-.7 1-1.4 2-2.5 2s-1.8-1-2.5-2c-1.1-1.6-2.3-2.8-2.6-3.5-.8-1.9-.2-4.1 1.3-5.5 1.5-1.4 3.8-1.4 5.3 0 .3.3.6.6.8 1 .2-.4.5-.7.8-1 1.5-1.4 3.8-1.4 5.3 0 1.5 1.4 2.1 3.6 1.3 5.5z"/></svg>
-                        Reservar por Airbnb
-                    </a>
+                    <a href="tarifas.html" class="btn">Ver Calendario e Info de Tarifas</a>
                 </div>
 
                 <div class="booking-card">
@@ -193,7 +211,7 @@
                         <p class="direct-booking-text">Reserva de forma directa con nuestro anfitrión para asegurar la mejor tarifa disponible, atención personalizada y resolver cualquier consulta especial.</p>
                         
                         <div class="host-profile-mini">
-                            <div class="host-avatar-container">
+                            <div class="host-avatar-container" style="background-color: var(--primary-color); width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
                                 <span class="user-avatar">AF</span>
                             </div>
                             <div class="host-details-mini">
@@ -204,10 +222,7 @@
 
                         <a href="https://wa.me/50496405085" target="_blank" class="btn btn-whatsapp">
                             <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="margin-right: 8px; vertical-align: middle;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                            Reservar por WhatsApp
-                        </a>
-                        <a href="tel:+50496405085" class="btn btn-call">
-                            Llamar al +504 9640 5085
+                            WhatsApp Anfitrión
                         </a>
                     </div>
                 </div>
@@ -215,6 +230,17 @@
         </div>
     </section>
 
+    <!-- Guía Local Teaser -->
+    <section id="guia" class="section section-services" style="background-color: var(--primary-ultra-light);">
+        <div class="container" style="text-align: center;">
+            <span class="section-tagline">Explora Catacamas</span>
+            <h2 class="section-title">Qué Hacer en la Localidad</h2>
+            <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto 40px auto; line-height: 1.7;">Catacamas, Olancho, ofrece una rica mezcla de ecoturismo y gastronomía local. Desde las místicas Cuevas de Talgua hasta tradicionales restaurantes de carnes asadas y exquisitos cafés locales de especialidad.</p>
+            <a href="guia-local.html" class="btn">Explorar la Guía Local de Olancho</a>
+        </div>
+    </section>
+
+    <!-- Opiniones Section -->
     <section id="opiniones" class="section section-reviews">
         <div class="container">
             <span class="section-tagline center">Opiniones</span>
@@ -229,7 +255,7 @@
                         </div>
                     </div>
                     <div class="rating-stars">★★★★★</div>
-                    <p class="review-text">"Casa Aura es un paraíso absoluto. La piscina infinita al atardecer es irreal. El diseño es sumamente elegante y limpio, tal como se ve en las fotos. El personal es encantador."</p>
+                    <p class="review-text">"Casa Aura es un oasis de paz en Catacamas. El patio y los atardeceres con vistas a las montañas son increíbles. El diseño es sumamente elegante y limpio, tal como se ve en las fotos. El personal es encantador."</p>
                 </div>
                 <div class="review-card">
                     <div class="review-header">
@@ -240,7 +266,7 @@
                         </div>
                     </div>
                     <div class="rating-stars">★★★★★</div>
-                    <p class="review-text">"Un lugar increíble para descansar con total privacidad. La cocina de chef y el acceso inmediato a la playa virgen hicieron de nuestras vacaciones familiares algo inolvidable."</p>
+                    <p class="review-text">"Un lugar increíble para descansar con total privacidad. La cocina súper completa y la cercanía al centro de Catacamas hicieron de nuestra estancia familiar algo inolvidable."</p>
                 </div>
                 <div class="review-card">
                     <div class="review-header">
@@ -251,54 +277,7 @@
                         </div>
                     </div>
                     <div class="rating-stars">★★★★★</div>
-                    <p class="review-text">"Arquitectura exquisita y vistas impresionantes. La conexión Wi-Fi satelital es súper veloz, lo que me permitió trabajar de forma remota mientras disfrutaba de la brisa marina. 10/10."</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacto" class="section section-contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-form-container">
-                    <span class="section-tagline">¿Tienes dudas?</span>
-                    <h2 class="section-title left">Ponte en Contacto</h2>
-                    <form class="contact-form" onsubmit="event.preventDefault();">
-                        <div class="form-group-contact">
-                            <input type="text" placeholder="Nombre completo" required>
-                        </div>
-                        <div class="form-group-contact">
-                            <input type="email" placeholder="Correo electrónico" required>
-                        </div>
-                        <div class="form-group-contact">
-                            <textarea placeholder="¿En qué te podemos ayudar? Escribe tu mensaje aquí..." rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Enviar Consulta</button>
-                    </form>
-                </div>
-
-                <div class="contact-info-container">
-                    <div class="map-embed">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d964.1599673379733!2d-85.8743087567042!3d14.845456559806314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6c7378ac87cd0b%3A0xde1d1a1c29b90da4!2sCasa%20Aura!5e0!3m2!1ses-419!2shn!4v1783393320569!5m2!1ses-419!2shn" width="100%" height="250" style="border:0;" allowfullscreen=""></iframe>
-                    </div>
-                    
-                    <div class="info-list">
-                        <div class="info-item">
-                            <strong>Ubicación:</strong>
-                            <span>Residencial El Llano 2da etapa, calle 4 primera casa lado derecho, Catacamas, Olancho, HND</span>
-                        </div>
-                        <div class="info-item">
-                            <strong>Contacto Directo:</strong>
-                            <span>reservas@casaaura.com | +504 9640 5085</span>
-                        </div>
-                        <div class="info-item">
-                            <strong>Tu Anfitrión:</strong>
-                            <div class="host-info">
-                                <span class="host-name">Andrea Fiallos</span>
-                                <span class="host-status">Superanfitriona • Respuestas en menos de 1 hora</span>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="review-text">"Arquitectura exquisita y vistas impresionantes de las colinas olanchanas. La conexión Wi-Fi Starlink es súper veloz, lo que me permitió trabajar de forma remota sin interrupciones. 10/10."</p>
                 </div>
             </div>
         </div>
@@ -309,15 +288,18 @@
             <div class="footer-brand">
                 <img src="assets/logo.svg" alt="Casa Aura Logo" class="footer-logo">
                 <h3>Casa Aura</h3>
-                <p>Estancia de lujo frente al mar.</p>
+                <p>Estancia moderna y exclusiva en Catacamas, Olancho.</p>
             </div>
             <div class="footer-links">
                 <div>
                     <h4>Explora</h4>
-                    <a href="#inicio">Inicio</a>
-<a href="#detalles">La Experiencia</a>
-                    <a href="#servicios">Servicios</a>
-                    <a href="#galeria">Galería</a>
+                    <a href="index.html">Inicio</a>
+                    <a href="experiencia.html">La Experiencia</a>
+                    <a href="servicios.html">Servicios</a>
+                    <a href="galeria.html">Galería</a>
+                    <a href="tarifas.html">Tarifas</a>
+                    <a href="reglas.html">Reglas de la Casa</a>
+                    <a href="guia-local.html">Guía Local</a>
                 </div>
                 <div>
                     <h4>Síguenos</h4>
@@ -328,16 +310,16 @@
                 </div>
                 <div>
                     <h4>Información</h4>
-                    <a href="#reserva">Tarifas e Información</a>
-                    <a href="#contacto">Contacto</a>
-                    <a href="#">Políticas de la Casa</a>
-                    <a href="#">Términos de Cancelación</a>
+                    <a href="tarifas.html">Tarifas e Información</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="reglas.html">Políticas de la Casa</a>
+                    <a href="contacto.html">Términos de Cancelación</a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2026 Casa Aura. Todos los derechos reservados. Diseñado como maqueta interactiva premium.</p>
+                <p>&copy; 2026 Casa Aura. Todos los derechos reservados. Diseñado como web completa de alta gama.</p>
             </div>
         </div>
     </footer>
